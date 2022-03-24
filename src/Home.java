@@ -15,8 +15,20 @@ public class Home {
         driver.findElement(By.id("password")).sendKeys("1234512356849");
         Thread.sleep(1000);
         driver.findElement(By.id("loginSubmit")).click();
+
+
+        //driver.findElement(By.id("navbar-add")).click();
+        //Thread.sleep(1000);
+        // driver.findElement(By.id("navbar-viewAll")).click();
+        //Thread.sleep(1000);
+        driver.findElement(By.id("searchText")).sendKeys("ceyda");
+        driver.findElement(By.id("searchButton")).click();
+        Thread.sleep(1000);
+        //driver.findElement(By.id("navbar-home")).click();
+        //Thread.sleep(1000);
+
         driver.findElement(By.id("logoutRedirect")).click();
-        
+
 
 
 
